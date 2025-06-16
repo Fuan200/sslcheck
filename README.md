@@ -30,7 +30,7 @@ RHEL/Fedora et al:
 ```sudo dnf install libssl-devel```
 
 MacOS
-```brew install gettext; brew install openssl```
+```brew install gettext && brew install openssl```
 To compile on mac you need to edit the Makefile to point to openssl@3 within the homebrew install dir
 
 ## Author
