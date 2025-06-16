@@ -90,7 +90,11 @@ int main(int argc, char **argv) {
 
     int short_output = 0;
     int json_output = 0;
-    char port[16] = "443";
+// variable port set to 5 characters long (65535) plus the null terminator
+// this is enough for the largest possible port.
+// This is a security improvement.
+// - Alexia
+    char port[6] = "443"; 
 
     static struct option long_options[] = {
         {"short",   no_argument,       0, 's'},
@@ -107,8 +111,10 @@ int main(int argc, char **argv) {
             case 's': short_output = 1; break;
             case 'j': json_output = 1; break;
             case 'p':
-                strncpy(port, optarg, sizeof(port) - 1);
-                port[sizeof(port) - 1] = 0;
+  // security improvement to always terminate and not overflow if given a very large string
+
+	    snprintf(port, sizeof(port), "%s", optarg);
+
                 break;
             case 'h': print_help(); return 0;
             case 'v': print_version(); return 0;
