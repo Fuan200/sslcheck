@@ -8,4 +8,5 @@ xgettext -k_ -o sslcheck.pot sslcheck.c
 msgmerge --update es.po sslcheck.pot
 msgmerge --update fr.po sslcheck.pot
 msgmerge --update en.po sslcheck.pot
+msgmerge --update it.po sslcheck.pot
 echo "strings updated. Review the lines that require translation"

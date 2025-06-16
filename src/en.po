@@ -2,12 +2,11 @@
 # Copyright (C) 2025 Alexia Michelle
 # This file is distributed under the same license as the sslcheck package.
 # Alexia Michelle <alexia@goldendoglinux.org>, 2025.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: sslcheck 1.2.0\n"
-"Report-Msgid-Bugs-To: alexia@goldendoglinux.org\n"
-"POT-Creation-Date: 2025-06-15 21:03-0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-16 08:36-0600\n"
 "PO-Revision-Date: 2025-06-15 21:10-0300\n"
 "Last-Translator: Alexia Michelle <alexia@goldendoglinux.org>\n"
 "Language-Team: English <en@li.org>\n"
@@ -27,7 +26,8 @@ msgid ""
 "sslcheck <domain>         prints domain and remainder of days until cert "
 "expires\n"
 msgstr ""
-"sslcheck <domain>         prints domain and remainder of days until cert expires\n"
+"sslcheck <domain>         prints domain and remainder of days until cert "
+"expires\n"
 
 #: sslcheck.c:67
 #, c-format
@@ -54,32 +54,42 @@ msgstr "-h --help                 prints this menu\n"
 msgid "-v --version              prints version\n"
 msgstr "-v --version              prints version\n"
 
-#: sslcheck.c:138
+#: sslcheck.c:152
 #, c-format
 msgid "Error creating SSL context\n"
 msgstr "Error creating SSL context\n"
 
-#: sslcheck.c:153
+#: sslcheck.c:167
 #, c-format
 msgid "Error getting SSL object\n"
 msgstr "Error getting SSL object\n"
 
-#: sslcheck.c:166
+#: sslcheck.c:180
 #, c-format
 msgid "Error connecting to %s\n"
 msgstr "Error connecting to %s\n"
 
-#: sslcheck.c:177
+#: sslcheck.c:191
 #, c-format
 msgid "No certificate found for %s\n"
 msgstr "No certificate found for %s\n"
 
-#: sslcheck.c:188
+#: sslcheck.c:204
 #, c-format
 msgid "Could not calculate certificate expiration\n"
 msgstr "Could not calculate certificate expiration\n"
 
-#: sslcheck.c:195
+#: sslcheck.c:214
+#, c-format
+msgid "Expired %d days ago\n"
+msgstr "Expired %d days ago\n"
+
+#: sslcheck.c:220
+#, c-format
+msgid "Domain: %s | Certificate EXPIRED %d days ago\n"
+msgstr "Domain: %s | Certificate EXPIRED %d days ago\n"
+
+#: sslcheck.c:222
 #, c-format
 msgid "Domain: %s | Days until Certification expires: %d\n"
 msgstr "Domain: %s | Days until Certification expires: %d\n"

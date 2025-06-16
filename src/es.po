@@ -2,12 +2,11 @@
 # Copyright (C) 2025 Alexia Michelle
 # This file is distributed under the same license as the sslcheck package.
 # Alexia Michelle <alexia@goldendoglinux.org>, 2025.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: sslcheck 1.2.0\n"
-"Report-Msgid-Bugs-To: alexia@goldendoglinux.org\n"
-"POT-Creation-Date: 2025-06-15 21:03-0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-16 08:36-0600\n"
 "PO-Revision-Date: 2025-06-15 21:10-0300\n"
 "Last-Translator: Alexia Michelle <alexia@goldendoglinux.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -27,7 +26,8 @@ msgid ""
 "sslcheck <domain>         prints domain and remainder of days until cert "
 "expires\n"
 msgstr ""
-"sslcheck <dominio>         muestra el dominio y los días restantes hasta que expire el certificado\n"
+"sslcheck <dominio>         muestra el dominio y los días restantes hasta que "
+"expire el certificado\n"
 
 #: sslcheck.c:67
 #, c-format
@@ -54,32 +54,42 @@ msgstr "-h --help                  muestra este menú\n"
 msgid "-v --version              prints version\n"
 msgstr "-v --version               muestra la versión\n"
 
-#: sslcheck.c:138
+#: sslcheck.c:152
 #, c-format
 msgid "Error creating SSL context\n"
 msgstr "Error creando el contexto SSL\n"
 
-#: sslcheck.c:153
+#: sslcheck.c:167
 #, c-format
 msgid "Error getting SSL object\n"
 msgstr "Error obteniendo el objeto SSL\n"
 
-#: sslcheck.c:166
+#: sslcheck.c:180
 #, c-format
 msgid "Error connecting to %s\n"
 msgstr "Error al conectar a %s\n"
 
-#: sslcheck.c:177
+#: sslcheck.c:191
 #, c-format
 msgid "No certificate found for %s\n"
 msgstr "No se encontró certificado para %s\n"
 
-#: sslcheck.c:188
+#: sslcheck.c:204
 #, c-format
 msgid "Could not calculate certificate expiration\n"
 msgstr "No se pudo calcular la expiración del certificado\n"
 
-#: sslcheck.c:195
+#: sslcheck.c:214
+#, c-format
+msgid "Expired %d days ago\n"
+msgstr "Caducado hace %d días\n"
+
+#: sslcheck.c:220
+#, c-format
+msgid "Domain: %s | Certificate EXPIRED %d days ago\n"
+msgstr "Dominio: %s | Certificado caducado hace %d días\n"
+
+#: sslcheck.c:222
 #, c-format
 msgid "Domain: %s | Days until Certification expires: %d\n"
 msgstr "Dominio: %s | Días hasta que vence el certificado: %d\n"
